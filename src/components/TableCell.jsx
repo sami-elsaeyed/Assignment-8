@@ -2,7 +2,9 @@ import {  Component } from "react";
 
 class TableCell extends Component{
 render(){
-    return <td></td>
+    console.log("this is cell")
+    return  <td >hello</td>
+        
 }
 
 }

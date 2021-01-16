@@ -37,8 +37,8 @@
   }
 }
 td{
-  border-color: black;
+  border: 2px black;
   height: 1cm;
   width: 1cm;
-  border-width: 0.1cm;
+  
 }
