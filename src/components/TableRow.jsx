@@ -7,7 +7,7 @@ class TableRow extends Component{
         render(){
             console.log("this is row")
             return <tr>      
-              {Array(this.props.col).fill(<TableCell key={this.props.rows} />)}
+              {Array(this.props.col).fill(<TableCell color={this.props.color}/>)}
               </tr> 
         }
 
