@@ -28,6 +28,15 @@ import Table from './components/table'
     <div className="App">
       <button onClick={this.addRow}>Add Row</button>
       <button onClick={this.addCol}>Add Column</button>
+      <label for="colors">Select a Color: </label>
+        <select name="colors" id="colors">
+          <option value="white">White</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+   
+    </select>
       <Table rows={this.state.row} cols={this.state.col} color={this.state.color} />
     </div>
   );
