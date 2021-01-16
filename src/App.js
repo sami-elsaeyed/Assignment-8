@@ -23,13 +23,16 @@ import Table from './components/table'
         this.setState({row:this.state.row+1})}
       this.setState({col:this.state.col+1})
     }
+    changeColor=(event)=>{
+        this.setState({color:event.target.value})
+    }
     render(){
   return (
     <div className="App">
       <button onClick={this.addRow}>Add Row</button>
       <button onClick={this.addCol}>Add Column</button>
       <label for="colors">Select a Color: </label>
-        <select name="colors" id="colors">
+        <select name="colors" id="colors" onChange={this.changeColor}>
           <option value="white">White</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
